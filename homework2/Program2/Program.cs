@@ -10,8 +10,8 @@ namespace Program2
     {
         static void Main(string[] args)
         {
-            int[] a = { 3, 5, 6, 25, 14, 7, 5, 11, 23 };
-            int max = a[0], min = a[0], avg = 0, sum = 0;
+            int[] a = { 3, 5, 6, 25, 14, 7, 5, 10, 23 };
+            int max = a[0], min = a[0], sum = 0;
             foreach(int i in a)
             {
                 if(max < i)
@@ -20,7 +20,7 @@ namespace Program2
                     min = i;
                 sum += i;
             }
-            avg = sum / a.Length;
+            double avg = sum / (double)a.Length;
 
             Console.WriteLine("最大值是：" + max);
             Console.WriteLine("最小值是：" + min);
